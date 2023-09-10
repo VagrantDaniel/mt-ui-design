@@ -1,0 +1,12 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "useNx": false,
+  "version": "0.0.0",
+  "ignoreChanges": [
+    "package-lock.json",
+    "**/package-lock.json",
+    "packages/mu-ui/components/**/__tests__/**/*.test.tsx"
+  ]
+}

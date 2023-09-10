@@ -1,0 +1,17 @@
+{
+  "name": "mt-ui-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd packages/mt-ui && npm run dev",
+    "test": "cd packages/mt-ui && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^5.1.5",
+    "sinon-chai": "^3.7.0"
+  }
+}

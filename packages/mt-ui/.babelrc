@@ -1,0 +1,17 @@
+// This file is for jest
+{
+  "presets": [["env", { "modules": false }]],
+  "env": {
+   // jest 会自动来 env 中找 test 的配置
+    "test": {
+      "presets": [
+        ["env", { "targets": { "node": "current" } }],
+        "@babel/preset-typescript",
+        "@babel/preset-react"
+      ],
+      "plugins": [
+        "@babel/plugin-proposal-export-namespace-from"
+      ]
+    }
+  }
+}
