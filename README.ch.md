@@ -4,7 +4,7 @@ MT-UI 是一个自建的 UI 组件库，主要是自己实际工作中的需求�
 
 本框架无其它组件库依赖，项目会持续维护，并且在代码中增加必要注释让前端同学学习制作思路，增加代码的可读性。
 
-本框架基于 React18 + Sass + [Tailwindcss](https://tailwindcss.com/docs/letter-spacing#setting-the-letter-spacing) + TS + [Vite](https://cn.vitejs.dev/guide/using-plugins) + Mocha 实现。
+本框架基于 React18 + Sass + [Tailwindcss](https://tailwindcss.com/docs/letter-spacing#setting-the-letter-spacing) + TS + [Vite](https://cn.vitejs.dev/guide/using-plugins) + Locale 本地化 + Jest 实现。
 
 ## 背景
 
@@ -13,9 +13,9 @@ MT-UI 是一个自建的 UI 组件库，主要是自己实际工作中的需求�
 ## 有哪些组件
 - 日历组件  
 
-![月日历](../previews/monthCalendar.png)
+![月日历](./packages/previews/zh/monthCalendar.png)
 
-![年日历](../previews/fullYearCalendar.png)
+![年日历](./packages/previews/zh/fullYearCalendar.png)
 
 ## 启动项目
 
