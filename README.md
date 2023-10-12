@@ -16,6 +16,13 @@ I released a [full calendar component](https://github.com/VagrantDaniel/RFCalend
 
 ![year calendar](./packages/previews/en/fullYearCalendar.png)
 
+
+- IssueBoard component
+
+![IssueBoard](./packages/previews/zh/issueBoardLight.png)
+
+![IssueBoard](./packages/previews/zh/issueBoardDark.png)
+
 ## Startup project
 
 1. install CLI
