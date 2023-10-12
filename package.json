@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "cd packages/mt-ui && npm run dev",
-    "test": "cd packages/mt-ui && npm run test"
+    "test": "cd packages/mt-ui && npm run test",
+    "docs:dev": "cd packages/docs && npm run dev",
+    "docs:build": "cd packages/docs && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +15,8 @@
   "devDependencies": {
     "lerna": "^5.1.5",
     "sinon-chai": "^3.7.0"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.38.0"
   }
 }

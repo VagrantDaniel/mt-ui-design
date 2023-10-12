@@ -18,17 +18,18 @@ I released a [full calendar component](https://github.com/VagrantDaniel/RFCalend
 
 ## Startup project
 
-1. install dependencies
+1. install CLI
 ```
-npm install
-```
-
-2. start up
-```
-npm run dev
+npm install @onpure/pack-cli -g
 ```
 
-3. test
+2. install dependencies
 ```
-npm run test
+lerna bootstrap && lerna add mt-ui --dev
 ```
+
+3. start up
+```
+npm run docs:dev
+```
+

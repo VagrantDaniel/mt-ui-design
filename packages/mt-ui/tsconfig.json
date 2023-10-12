@@ -28,7 +28,12 @@
       "@assets": ["assets"],
     }
   },
-  "include": ["components/**/*.ts", "components/**/*.tsx"],
+  "include": [
+    "assets/**/*.tsx", 
+    "assets/**/*.ts",
+    "components/**/*.ts", 
+    "components/**/*.tsx"
+  ],
   "exclude": ["node_modules", "components/**/*.test.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

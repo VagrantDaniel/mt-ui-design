@@ -14,6 +14,7 @@ function DateCell(dateCellProps: IDateCellProps) {
         'date-cell',
         'w-7', 
         'h-7', 
+        'leading-7',
         'm-auto',
         day?.isSame(selected?.format('YYYY-MM-DD')) ? "day-is-selected" : '',
     )

@@ -1,4 +1,4 @@
-import { CalendarType } from "../../components/ConfigProvider/interface"
+import { CalendarType, IssueBoardType, ModalType, } from "./interface"
 
 const Calendar: CalendarType = {
     view: {
@@ -31,7 +31,27 @@ const Calendar: CalendarType = {
     },
 }
 
+const IssueBoard: IssueBoardType = {
+    issueLabel: {
+        'todo': '计划做',
+        'inprogress': '进行中',
+        'done': '已完成',
+        'cannelled': '已取消',
+    },
+    modalLabel: {
+        title: '取个标题',
+        description: '输入描述文字...',
+    },
+}
+
+const Modal: ModalType = {
+    confirmText: '确认',
+    cancelText: '取消',
+}
+
 export default {
     locale: 'zh-CN',
     Calendar,
+    IssueBoard,
+    Modal,
 }

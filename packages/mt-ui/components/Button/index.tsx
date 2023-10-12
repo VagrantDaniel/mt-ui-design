@@ -3,7 +3,7 @@ import { IButtonProps } from './interface'
 import cs from '@utils'
 
 function Button(buttonProps: IButtonProps, ref: LegacyRef<HTMLButtonElement>) {
-    const { size, children, disabled = false, type, long = false, onClick, } = buttonProps
+    const { size, children, disabled = false, type, long = false, onClick, classNames, } = buttonProps
     const innerButtonRef = useRef()
     const buttonRef = ref || innerButtonRef
 
@@ -12,34 +12,39 @@ function Button(buttonProps: IButtonProps, ref: LegacyRef<HTMLButtonElement>) {
         onClick && onClick(event)
     }
     
-    const classNames = [
+    const className = [
         'cursor-pointer',
         'rounded',
+        'w-fit',
+        'px-2'
     ]
 
     if (type === 'default') {
-        classNames.push('bg-slate-200')
+        className.push('bg-slate-200 dark:bg-black')
     }
 
     if (size === 'small') {
-        classNames.push('text-xs')
+        className.push('text-xs')
     } else if (size === 'large') {
-        classNames.push('text-lg')
+        className.push('text-lg')
     } else {
-        classNames.push('text-base')
+        className.push('text-base')
     }
 
     if (long) {
-        classNames.push('w-full', 'h-full')
-    } else {
-        classNames.push('w-12', 'h-6')
-    }
+        className.push('w-full', 'h-full')
+    } 
+
+    classNames && className.push(classNames)
+    // else {
+    //     className.push('w-12', 'h-6')
+    // }
 
     return (
         <button 
             // @ts-ignore
             ref={buttonRef}
-            className={cs(...classNames)}
+            className={cs(...className)}
             disabled={disabled}
             onClick={handleClick}
         >

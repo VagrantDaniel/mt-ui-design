@@ -1,4 +1,5 @@
 export interface IButtonProps {
+    classNames?: string
     type?: string
     size?: 'small' | 'default' | 'large'
     // 宽度自适应

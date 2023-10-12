@@ -60,6 +60,7 @@ function Calendar(calendarProps: ICalendarProps) {
             "h-14", 
             "flex", 
             "justify-between",
+            "dark:border-[#27272a]",
         )
 
         const controlsClassName = [
@@ -110,7 +111,7 @@ function Calendar(calendarProps: ICalendarProps) {
                     selected={selected}
                     mode={mode}
                 />
-                <div className="h-10 text-align border-t">
+                <div className="h-10 text-align border-t dark:border-[#27272a]">
                     { renderTodayButton(true) }
                 </div>
             </div>
@@ -123,6 +124,7 @@ function Calendar(calendarProps: ICalendarProps) {
             const className = [
                 'px-5', 
                 'py-7',
+                'dark:border-[#27272a]'
             ]
             if (i < 8) {
                 className.push('border-b')
@@ -147,11 +149,11 @@ function Calendar(calendarProps: ICalendarProps) {
     }
 
     return (
-        <div className="calendar rounded border grid max-w-fit h-min">
+        <div className="calendar rounded border dark:bg-black dark:border-[#27272a] dark:text-white grid max-w-fit h-min">
             { renderHeader() }
             { mode === 'month' && renderMonthPanel() }
             { mode === 'year' && 
-                <div className="bg-white grid gap-0 p-2" style={{ gridTemplateColumns: 'repeat(4, minmax(0, min-content))' }}>
+                <div className="bg-white grid gap-0 p-2 dark:bg-black" style={{ gridTemplateColumns: 'repeat(4, minmax(0, min-content))' }}>
                     { renderYearPanel() }
                 </div>
             }

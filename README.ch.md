@@ -17,19 +17,25 @@ MT-UI 是一个自建的 UI 组件库，主要是自己实际工作中的需求�
 
 ![年日历](./packages/previews/zh/fullYearCalendar.png)
 
+- 事件黑板组件
+
+![事件黑板](./packages/previews/zh/issueBoardLight.png)
+
+![事件黑板](./packages/previews/zh/issueBoardDark.png)
+
 ## 启动项目
 
-1. 安装依赖
+1. 安装 CLI
 ```
-npm install
-```
-
-2. 启动
-```
-npm run dev
+npm install @onpure/pack-cli -g
 ```
 
-3. 测试
+2. 安装依赖
 ```
-npm run test
+lerna bootstrap && lerna add mt-ui --dev
+```
+
+3. 打开组件文档
+```
+npm run docs:dev
 ```

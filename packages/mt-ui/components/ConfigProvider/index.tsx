@@ -1,6 +1,6 @@
 import { createContext, useEffect } from 'react'
-import { IConfigProviderProps } from './interface';
-import zhCN from '../../assets/locale/default'
+import zhCN from '../../assets/locale/zh-CN'
+import { IConfigProviderProps } from '../../assets/locale/interface';
 
 const defaultProps = {
     locale: zhCN,
@@ -13,7 +13,7 @@ export const ConfigContext = createContext<IConfigProviderProps>({
 });
 
 function ConfigProvider(props: IConfigProviderProps) {
-    const { locale, children, } = props
+    const { locale, children, mode, } = props
 
     const config: IConfigProviderProps = {
         locale,
@@ -23,6 +23,7 @@ function ConfigProvider(props: IConfigProviderProps) {
         configProviderProps = {
             ...configProviderProps,
             locale,
+            mode,
         }
     }, [locale])
 

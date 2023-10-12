@@ -1,9 +1,15 @@
 // This file is for jest
 {
+  "parserOpts": {
+    "allowImportExportEverywhere": true
+  },
   "presets": [["env", { "modules": false }]],
   "env": {
    // jest 会自动来 env 中找 test 的配置
     "test": {
+      "parserOpts": {
+        "allowImportExportEverywhere": true
+      },
       "presets": [
         ["env", { "targets": { "node": "current" } }],
         "@babel/preset-typescript",

@@ -1,0 +1,47 @@
+body {
+    overflow: hidden;
+    .theme-dark {
+        background-color: #000;
+        .arco-menu-inline-header {
+            background-color: #000;
+            color: #fff;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        .arco-menu-group-title {
+            background-color: #000;
+        }
+        .arco-menu-item {
+            background-color: #000;
+            color: #fff;
+            &.arco-menu-selected, &:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        .markdown-body table {
+            border-color: #27272a
+        }
+        .markdown-body .nav-intro {
+            border-color: #27272a
+        }
+        .markdown-body table thead th {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-color: #27272a;
+            color: #fff;
+        }
+        .markdown-body table td {
+            border-color: #27272a;
+            background-color: #000;
+            color: #fff;
+        }
+        .codebox-wrapper .code pre.code_block {
+            border-color: #27272a;
+            margin-bottom: 20px;
+            code {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}

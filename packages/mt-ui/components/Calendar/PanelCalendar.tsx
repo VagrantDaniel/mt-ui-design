@@ -77,8 +77,8 @@ function PanelCalendar(panelCalendarProps: IPanelCalendarProps) {
             <div className="space-y-4">
                 <div>
                     {/* 周一 ~ 周日 */}
-                    <div className="text-black/50 text-sm flex justify-center mb-4">
-                        { Object.values(locale?.Calendar.week || {}).map((day: string, index: number) => (<div className={cs(...["h-7", "p-2"])} key={`${day}${index}`}>{day}</div>)) }
+                    <div className="text-black/50 text-sm flex justify-center mb-4 dark:text-[#fff]/[0.4]">
+                        { Object.values(locale?.Calendar.week || {}).map((day: unknown, index: number) => (<div className={cs(...["h-7", "p-2"])} key={`${day}${index}`}>{day as string}</div>)) }
                     </div>
                     { renderContents() }
                 </div>

@@ -1,3 +1,7 @@
+.stroke-sky-500 {
+    stroke: #0ea5e9
+}
+
 .calendar {
     .day-is-selected {
         background-color: rgba(22, 93, 255);
@@ -5,4 +9,24 @@
         border-radius: 50%;
     }
 }
+
+.modal-mask {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+    position: fixed;
+    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
 

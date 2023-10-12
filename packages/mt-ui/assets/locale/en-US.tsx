@@ -1,4 +1,5 @@
-import { CalendarType } from "@components/ConfigProvider/interface"
+// @ts-ignore
+import { CalendarType, IssueBoardType, ModalType, } from "./interface"
 
 const Calendar: CalendarType = {
     view: {
@@ -31,7 +32,27 @@ const Calendar: CalendarType = {
     }
 }
 
+const IssueBoard: IssueBoardType = {
+    issueLabel: {
+        'todo': 'Todo',
+        'inprogress': 'In Progress',
+        'done': 'Done',
+        'cannelled': 'Cannelled',
+    },
+    modalLabel: {
+        title: 'Issue title',
+        description: 'Add description...',
+    },
+}
+
+const Modal: ModalType = {
+    confirmText: 'confirm',
+    cancelText: 'cancel',
+}
+
 export default {
     locale: 'es-US',
     Calendar,
+    IssueBoard,
+    Modal,
 }
